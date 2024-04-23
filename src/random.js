@@ -1,4 +1,3 @@
-
 function randomInt(min, max){
     if (!max){
         max = min

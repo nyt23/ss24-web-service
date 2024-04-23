@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Avatar Creation Tool</title>
+</head>
+<body>
+    <h1>Avatar Creation Tool</h1>
+
+    <section id="form">
+        <form class="form" method="post" action="/create-avatar">
+            <p>Please fill the form below:</p>
+
+            <div class="name">
+                <label for="avatarName">Name: </label><br>
+                <input type="text" id="avatarName" name="avatarName"><br>
+            </div>
+
+            <div class="childAge">
+                <label for="childAge">Age: </label><br>
+                <input type="number" id="childAge" name="childAge"><br>
+            </div>
+
+            <div class="skinColor">
+                <label for="skinColor">Pick a skin color: </label>
+                <input type="color" id="skinColor" name="skinColor" value="#000000"/><br>
+            </div>
+
+            <div class="hairstyle">
+                <label>Hairstyle: </label>
+                <select name="hairstyle" id="hairstyle">
+                    <option value="classic_bob">Classic Bob</option>
+                    <option value="messy_bun">Messy Bun</option>
+                    <option value="long_layers">Long Layers</option>
+                    <option value="pixie_cut">Pixie Cut</option>
+                </select><br>
+            </div>
+
+            <div class="headShape">
+                <label>Head shape</label>
+                <select name="heaShape" id="headShape">
+                    <option value="oval">Oval</option>
+                    <option value="round">Round</option>
+                    <option value="square">Square</option>
+                    <option value="diamond">Diamond</option>
+                </select><br>
+            </div>
+
+            <div class="upperClothing">
+                <label>Upper clothing:</label>
+                <select name="upperClothing" id="upperClothing">
+                    <option value="tshirt">T-shirt</option>
+                    <option value="dress">Dress</option>
+                    <option value="hoodie">Hoodie</option>
+                    <option value="sweater">Sweater</option>
+                </select><br>
+            </div>
+
+            <div class="lowerClothing">
+                <label>Lower clothing:</label>
+                <select name="lowerClothing" id="lowerClothing">
+                    <option value="jeans">Jeans</option>
+                    <option value="leggings">Leggings</option>
+                    <option value="shorts">Shorts</option>
+                    <option value="skirt">Skirt</option>
+                </select><br>
+            </div>
+
+            <input type="submit" value="Create">
+        </form>
+    </section>
+</body>
+</html>
