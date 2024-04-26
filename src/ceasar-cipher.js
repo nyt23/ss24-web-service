@@ -1,6 +1,6 @@
 // import readline from "node:readline";
 // there is an issue within this code on the blank space. Letters can be encrypted as a black space in some cases
-// and when decrypted, they still remain as blank space, e.g. when key = 7, text = t. I do not know how to fix it
+// and when decrypted, they still remain as blank space, e.g. when key = 7, text = t. I do not know how to fix it atm
 
 
 // encrypt
