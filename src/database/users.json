@@ -1,0 +1,16 @@
+[
+  {
+    "name": "ray",
+    "userId": "ray@gmail.com",
+    "password": "123",
+    "token": "uFMgHmheDckbcBdzVXcIYBZjXxcXSS",
+    "roles": ["child"]
+  },
+  {
+    "name": "Hanna",
+    "userId": "Hanna@gmail.com",
+    "password": "456",
+    "token": "uFMgHmheDckbcBdzVXcIYBZjXxcX11",
+    "roles": ["child, parents"]
+  }
+]

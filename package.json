@@ -14,9 +14,15 @@
     "supertest": "^6.3.4"
   },
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bearer": "^0.0.20",
     "body-parser": "^1.20.2",
     "express": "^4.19.2",
+    "http": "^0.0.1-security",
     "joi": "^17.12.3",
+    "passport": "^0.7.0",
+    "passport-http": "^0.3.0",
+    "passport-http-bearer": "^1.0.1",
     "uuid": "^9.0.1"
   }
 }

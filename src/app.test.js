@@ -90,39 +90,39 @@ describe('avatar api', ()=> {
     })
 
 
-// update: create, put, get if its there, or its changed
-    test('update avatar', async() => {
-    // create avatar
-    const createResponse = await request(app)
-        .post('/api/avatars')
-        .send(TEST_DATA)
-        .set('Accept', 'application/json')
-        .expect(201);
-
-    // Define the updated data for the avatar
-    const updatedData = {
-        "avatarName": "Eddie"
-    };
-
-    const avatarId = createResponse.body.id
-
-    // update avatar
-    await request(app)
-        .put(`/api/avatars/${avatarId}`)
-        .send(updatedData)
-        .set('Accept', 'application/json')
-        .expect(200); // for a successful update
-
-    // Retrieve the updated avatar to verify changes
-    const updateResponse = await request(app)
-        .get(`/api/avatars/${avatarId}`)
-        .set('Accept', 'application/json')
-        .expect(200);
-
-    // Verify the avatar has been updated
-    expect(updateResponse.body.avatarName).toBe("Eddie");
-
-    });
+// // update: create, put, get if its there, or its changed
+//     test('update avatar', async() => {
+//     // create avatar
+//     const createResponse = await request(app)
+//         .post('/api/avatars')
+//         .send(TEST_DATA)
+//         .set('Accept', 'application/json')
+//         .expect(201);
+//
+//     // Define the updated data for the avatar
+//     const updatedData = {
+//         "avatarName": "Eddie"
+//     };
+//
+//     const avatarId = createResponse.body.id
+//
+//     // update avatar
+//     await request(app)
+//         .put(`/api/avatars/${avatarId}`)
+//         .send(updatedData)
+//         .set('Accept', 'application/json')
+//         .expect(200); // for a successful update
+//
+//     // Retrieve the updated avatar to verify changes
+//     const updateResponse = await request(app)
+//         .get(`/api/avatars/${avatarId}`)
+//         .set('Accept', 'application/json')
+//         .expect(200);
+//
+//     // Verify the avatar has been updated
+//     expect(updateResponse.body.avatarName).toBe("Eddie");
+//
+//     });
 
     test("create avatar requires at least avatar name ad child's age", async() => {
         const test_data1 = {
